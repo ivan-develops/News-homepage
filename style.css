@@ -55,31 +55,32 @@ body {
                         "main__title"
                         "main__description"
                         "main__button";
+    margin-bottom: 2.5rem; 
 }
 .main__img {
-    grid-area: 'main__img';
+    grid-area: main__img;
     img {
         width: 100%;
     }
 }
 .main__title {
-    grid-area: 'main__title';
+    grid-area: main__title;
     font-weight: 800;
     font-size: 2.8rem;
     line-height: 1; 
 }
 .main__description {
-    grid-area: 'main__description';
+    grid-area: main__description;
     color: var(--Dark-grayish-blue);
     line-height: 1.75;   
 }
 .main__button {
-    grid-area: 'main__button';
+    grid-area: main__button;
     text-decoration: none;
     background: var(--Soft-red);
     color: var(--Very-dark-blue);
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.25rem;
     font-weight: 800;
     padding: 1rem 2rem;
     justify-self: start;
@@ -89,4 +90,66 @@ body {
         color: var(--Off-white);
         background: var(--Very-dark-blue);
     }
+}
+
+.sidebar {
+    background: var(--Very-dark-blue);
+    padding: 1.4rem;
+    margin-bottom: 2.5rem; 
+}
+.title-sidebar {
+    color: var(--Soft-orange);
+    font-size: 2.3rem; 
+}
+.sidebar-article {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+.sidebar-article:last-child {
+    padding-bottom: 0.2rem;
+    border-bottom: none;
+}
+.sidebar__title {
+    color: var(--Off-white);
+    font-weight: 700;
+    font-size: 1.38rem;
+    margin-bottom: 0.4rem;  
+}
+.sidebar__description {
+    color: var(--Grayish-blue);
+    line-height: 1.75;   
+}
+
+.most-viewed-articles {
+    display: grid;
+    gap: 2.3rem;
+}
+.top-article {
+    display: grid;
+    grid-template-areas:"top__img top__number"
+                        "top__img top__title"
+                        "top__img top__description";
+    gap: 0.5rem 1rem;  
+    grid-template-columns: 1fr 2fr;
+                    }
+.top__img {
+    grid-area: top__img;
+    display: block;
+    width: 90%;
+}
+.top__number {
+    grid-area: top__number;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--Soft-red);
+    line-height: 1;
+}
+.top__title {
+    grid-area: top__title;
+    font-weight: 800;
+    font-size: 1.21rem;
+}
+.top__description {
+    grid-area: top__description;
+    line-height: 1.75;   
 }
