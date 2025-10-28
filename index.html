@@ -11,41 +11,80 @@
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header class="header">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="logo W." class="logo__img">
+    </div>
 
-  The Bright Future of Web 3.0?
+    <!-- * btn menu icon -->
+    <!-- <button class="btnMenu" id="btnMenu" aria-label="open menu">
+      <img src="assets/images/icon-menu.svg" alt="icon menu" class="btnNav__img">
+    </button> -->
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+    <nav class="nav">
+      <div class="nav__link">Home</div>
+      <div class="nav__link">New</div>
+      <div class="nav__link">Popular</div>
+      <div class="nav__link">Trending</div>
+      <div class="nav__link">Categories</div>
+      <!-- * btn close menu -->
+      <!-- <button class="btnCloseMenu" id="btnCloseMenu"><img src="assets/images/icon-menu-close.svg" alt="icon close menu"></button> -->
+    </nav>
+  </header>
 
-  Read more
+  <main class="main">
+    <div class="main__img">
+      <picture>
+        <source media="(min-width:800px)" srcset="assets/images/image-web-3-desktop.jpg">
+        <img src="assets/images/image-web-3-mobile.jpg" alt="abstract shapes" style="width:auto;">
+      </picture>
+    </div>
+    <div class="main__content">
+      <h1 class="main__title">The Bright Future of Web 3.0?</h1>
+      <p class="main__description">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+        But is it really fulfilling its promise?
+      </p>
+      <a href="#" class="main__button">Read more</a>
+    </div>
+  </main>
 
-  New 
+  <aside class="sidebar">
+    <h2 class="title-sidebar">New</h2>
+    <article class="sidebar-article">
+      <p class="sidebar__title">Hydrogen VS Electric Cars</p>
+      <p class="sidebar__description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </article>
+    <article class="sidebar-article"">
+      <p class="sidebar__title">The Downsides of AI Artistry</p>
+      <p class="sidebar__description">What are the possible adverse effects of on-demand AI image generation?</p>
+    </article>
+    <article class="sidebar-article"">
+      <p class="sidebar__title">Is VC Funding Drying Up?</p>
+      <p class="sidebar__description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </article>
+  </aside>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  <section class="most-viewed-articles">
+    <article class="top-article">
+      <img class="top__img" src="assets/images/image-retro-pcs.jpg" alt="Retro PC">
+      <p class="top__number">01</p>
+      <p class="top__title">Reviving Retro PCs</p>
+      <p class="top__description">What happens when old PCs are given modern upgrades?</p>
+    </article>
+    <article class="top-article">
+      <img class="top__img" src="assets/images/image-top-laptops.jpg" alt="keyboard">
+      <p class="top__number">02</p>
+      <p class="top__title">Top 10 Laptops of 2022</p>
+      <p class="top__description">Our best picks for various needs and budgets.</p>
+    </article>
+    <article class="top-article">
+      <img class="top__img" src="assets/images/image-gaming-growth.jpg" alt="gamming control">
+      <p class="top__number">03</p>
+      <p class="top__title">The Growth of Gaming</p>
+      <p class="top__description">How the pandemic has sparked fresh opportunities.</p>
+    </article>
+  </section>
 
 </body>
 </html>
