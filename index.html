@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
   <title>News homepage</title>
 
 </head>
@@ -17,21 +18,22 @@
       <div class="logo">
         <img src="assets/images/logo.svg" alt="logo W." class="logo__img">
       </div>
-  
+
+      <nav class="nav" id="nav">
+        <!-- * btn close menu -->
+        <a class="btnCloseMenu" id="btnCloseMenu">
+          <svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>
+        </a>
+        <a class="nav__link" href="#">Home</a>
+        <a class="nav__link" href="#">New</a>
+        <a class="nav__link" href="#">Popular</a>
+        <a class="nav__link" href="#">Trending</a>
+        <a class="nav__link" href="#">Categories</a>
+      </nav>
       <!-- * btn menu icon -->
       <a class="btnMenu" id="btnMenu" aria-label="open menu">
         <svg  vg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
       </a>
-  
-      <nav class="nav">
-        <div class="nav__link">Home</div>
-        <div class="nav__link">New</div>
-        <div class="nav__link">Popular</div>
-        <div class="nav__link">Trending</div>
-        <div class="nav__link">Categories</div>
-        <!-- * btn close menu -->
-        <a class="btnCloseMenu" id="btnCloseMenu"><img src="assets/images/icon-menu-close.svg" alt="icon close menu"></a>
-      </nav>
     </header>
   
     <main class="main">

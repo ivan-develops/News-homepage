@@ -19,6 +19,7 @@ html {
 body {
     font-family: "Inter", sans-serif;
     color: var(--Very-dark-blue);
+    overflow-x: hidden; /* evita scroll lateral */
 }
 .container {
     width: 100%;
@@ -32,11 +33,50 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 .logo__img {
     height: 1.8rem;
 }
 .btnMenu {
+    cursor: pointer;
+    &:hover {
+        g{
+            fill: var(--Soft-red);
+        }
+    }
+}
+.nav {
+    position:absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    width: 68%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    transform: translateX(100%);
+    padding: 17vh 1.5rem; 
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px); /* desenfoque del fondo */
+    z-index: 2; /* se superpone por encima del backdrop */
+}
+.nav__link {
+    color: var(--Very-dark-blue);
+    text-decoration: none;
+    font-size: 1.2rem;
+    &:hover{
+        text-decoration: underline var(--Soft-red);
+    }
+}
+.nav.active {
+    transform: translateX(0);
+}
+.btnCloseMenu{
+    position: absolute;
+    top: 1.8rem; 
+    right: 1.33rem; 
     cursor: pointer;
 
     &:hover {
@@ -45,9 +85,20 @@ body {
         }
     }
 }
-.nav {
-    display: none;
+.backdrop {               /* se crea en el DOM*/
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
 }
+
+.backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .main {
     display: grid;
     gap: 1.1rem;  
