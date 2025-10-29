@@ -141,7 +141,8 @@ body {
     letter-spacing: 0.25rem;
     font-weight: 800;
     padding: 1rem 2rem;
-    justify-self: start;
+    justify-self: self-start;
+    align-self: self-start;
     transition: all 0.3s ease;
     
     &:hover {
