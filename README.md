@@ -42,7 +42,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-
 ### What I learned
 
 Practice using the DOM, apply good user experience with the use of microanimations about _burger menu_.
